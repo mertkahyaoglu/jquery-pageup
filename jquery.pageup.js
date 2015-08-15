@@ -20,9 +20,9 @@
 			
 			$(document).scroll(function(){
 				if ($(this).scrollTop() > options.offset) {
-					$this.fadeIn(options.fadeDelay);
+					$this.stop(true,true).fadeIn(options.fadeDelay);
 				} else {
-					$this.fadeOut(options.fadeDelay);
+					$this.stop(true,true).fadeOut(options.fadeDelay);
 				}
 			});
 		
