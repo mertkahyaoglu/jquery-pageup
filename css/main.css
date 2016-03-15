@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0}
+
+body{
+	background-color: #000c21;
+	position: relative;
+	padding: 100px;
+}
+
+p {
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+#pageup {
+	position: fixed;
+	right: 40px;
+	bottom: 60px;
+	width: 48px;
+	height: 48px;
+	background-image: url(../img/up.png);
+	background-repeat: no-repeat;
+	background-size: 48px 48px;
+	display: none;
+	cursor: pointer;
+}
