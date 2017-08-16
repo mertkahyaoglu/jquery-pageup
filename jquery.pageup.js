@@ -11,13 +11,9 @@
 	"use strict";
 
 	$.fn.pageup = function(options) {
-
 		var options = $.extend({}, $.fn.pageup.defaults, options);
-
 		return this.each(function() {
-
 			var $this = $(this);
-			
 			$(document).scroll(function(){
 				if ($(this).scrollTop() > options.offset) {
 					$this.stop(true,true).fadeIn(options.fadeDelay);
@@ -30,9 +26,7 @@
 				$('html, body').animate({scrollTop : 0}, options.scrollDuration);
 				return false;
 			});
-
 		});
-
 		return $this;
 	};
 
@@ -41,5 +35,4 @@
 		fadeDelay: 500,
 		scrollDuration: 400
 	};
-
 })(jQuery);
